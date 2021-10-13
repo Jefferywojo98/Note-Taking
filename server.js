@@ -7,7 +7,7 @@ const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -54,7 +54,7 @@ app.delete("/api/notes/:id", function(req, res) {
 app.get("/notes", function(req, res) {
   res.sendFile(path.join(__dirname, "./develop/public/notes.html"));
   });
-
+// here is the *. since it a * it has to be on the botton or it will not work 
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "./develop/public/index.html"));
  });
