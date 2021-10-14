@@ -8,7 +8,7 @@ const writeAsync = util.promisify(fs.writeFile);
 
 const app = express();
 // this is where my local server/heroku port will be
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -53,11 +53,11 @@ app.delete("/api/notes/:id", function(req, res) {
 })
 // the get of HTML
 app.get("/notes", function(req, res) {
-  res.sendFile(path.join("./develop/public/notes.html"));
+  res.sendFile(path.join(__dirname, "./develop/public/notes.html"));
   });
 // here is the *. since it a * it has to be on the botton or it will not work 
   app.get("*", function(req, res) {
-    res.sendFile(path.join("./develop/public/index.html"));
+    res.sendFile(path.join(__dirname, "./develop/public/index.html"));
  });
 
 app.listen(PORT, function() {
