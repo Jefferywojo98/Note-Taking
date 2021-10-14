@@ -13,10 +13,10 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(__dirname + "./develop/public"));
+app.use(express.static(__dirname + "./public"));
 // to grab the notes
 app.get("/api/notes", function(req, res) {
-  readAsync("./develop/db/db.json", "utf8").then(function(data) {
+  readAsync("./db/db.json", "utf8").then(function(data) {
       notes = [].concat(JSON.parse(data))
       res.json(notes);
     })
@@ -24,20 +24,20 @@ app.get("/api/notes", function(req, res) {
 // post to notes
 app.post("/api/notes", function(req, res) {
     const note = req.body;
-    readAsync("./develop/db/db.json", "utf8").then(function(data) {
+    readAsync("./db/db.json", "utf8").then(function(data) {
       const notes = [].concat(JSON.parse(data));
       note.id = notes.length + 1
       notes.push(note);
       return notes
     }).then(function(notes) {
-      writeAsync("./develop/db/db.json", JSON.stringify(notes))
+      writeAsync("./db/db.json", JSON.stringify(notes))
       res.json(note);
     })
 });
 // deleting of notes
 app.delete("/api/notes/:id", function(req, res) {
   const idToDelete = parseInt(req.params.id);
-  readAsync("./develop/db/db.json", "utf8").then(function(data) {
+  readAsync("./db/db.json", "utf8").then(function(data) {
     const notes = [].concat(JSON.parse(data));
     const newNotesData = []
     for (let i = 0; i<notes.length; i++) {
@@ -47,17 +47,17 @@ app.delete("/api/notes/:id", function(req, res) {
     }
     return newNotesData
   }).then(function(notes) {
-    writeAsync("./develop/db/db.json", JSON.stringify(notes))
+    writeAsync("./db/db.json", JSON.stringify(notes))
     res.send('Note been save!');
   })
 })
 // the get of HTML
 app.get("/notes", function(req, res) {
-  res.sendFile(path.join(__dirname, "./develop/public/notes.html"));
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
   });
 // here is the *. since it a * it has to be on the botton or it will not work 
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./develop/public/index.html"));
+    res.sendFile(path.join(__dirname, "./public/index.html"));
  });
 
 app.listen(PORT, function() {
