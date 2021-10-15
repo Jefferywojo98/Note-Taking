@@ -54,7 +54,7 @@ ___
 
 ## Links
 ___
-- [GitHub Repository](https://github.com/tracye1083/Note-Taker)
+- [GitHub Repository](https://github.com/Jefferywojo98/Note-Taking)
 - [Deployed Application](https://jeffery-note-maker.herokuapp.com/)
 
 
