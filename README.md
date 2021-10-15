@@ -54,7 +54,7 @@ ___
 
 ## Links
 ___
-- [GitHub Repository](https://github.com/tracye1083/Note-Taker)
+- [GitHub Repository](https://github.com/Jefferywojo98)
 - [Deployed Application](https://jeffery-note-maker.herokuapp.com/)
 
 
@@ -63,7 +63,7 @@ ___
 
 ![Landing Page](assets\screencapture-jeffery-note-maker-herokuapp-2021-10-15-01_32_10.png)
 ![Note Page](assets\screencapture-jeffery-note-maker-herokuapp-notes-2021-10-15-01_33_00.png)
-[Walkthough Video](/Assets/AppScreenshot.png)
+[Walkthough Video](https://watch.screencastify.com/v/cNvzLPripDTvV0BzDDyf)
 
 
 ## Usage
