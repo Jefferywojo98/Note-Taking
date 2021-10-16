@@ -61,7 +61,8 @@ ___
 ## Screenshots/Videos
 ___
 
-
+![Main Page](assets\screencapture-jeffery-note-maker-herokuapp-2021-10-15-01_32_10.png)
+![Notes Page](assets\screencapture-jeffery-note-maker-herokuapp-notes-2021-10-15-01_33_00.png)
 [Walkthough Video](https://watch.screencastify.com/v/cNvzLPripDTvV0BzDDyf)
 
 
