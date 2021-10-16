@@ -76,7 +76,7 @@ ___
 
 3. Enter your title and text into the notes's appropriate fields in the right-hand side of the screen.
 
-4. Click the Save or the + icons in the navigation bar on the top-right of the pqge.
+4. Click the Save icons in the navigation bar on the top-right of the pqge.
 
 
 
