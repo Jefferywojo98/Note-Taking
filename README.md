@@ -61,8 +61,9 @@ ___
 ## Screenshots/Videos
 ___
 
-![Main Page](assets\screencapture-jeffery-note-maker-herokuapp-2021-10-15-01_32_10.png)
-![Notes Page](assets\screencapture-jeffery-note-maker-herokuapp-notes-2021-10-15-01_33_00.png)
+![screencapture-jeffery-note-maker-herokuapp-2021-10-15-01_32_10](https://user-images.githubusercontent.com/87153472/137596995-1ccb516c-203b-489b-8b0d-816ed5013f0a.png)
+)
+![screencapture-jeffery-note-maker-herokuapp-notes-2021-10-15-01_33_00](https://user-images.githubusercontent.com/87153472/137597011-53b25626-8420-4e3f-874b-34f53547a2d4.png)
 [Walkthough Video](https://watch.screencastify.com/v/cNvzLPripDTvV0BzDDyf)
 
 
