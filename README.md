@@ -85,7 +85,7 @@ ___
 ## Questions
 ___
 
-If you have any questions about the repo you can open an issue on my [Github](https://github.com/Jefferywojo98)
+If you have any questions about the repo you can open an issue on my [Github](https://github.com/Jefferywojo98/Note-Taking/issues)
 
 ## License
 ___
